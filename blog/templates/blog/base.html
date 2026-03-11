@@ -24,10 +24,10 @@
                     <!-- 右にメニューを出す時 -->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'accounts:user_detail' user.pk %}">ユーザー情報閲覧</a>
+                        <a class="nav-link" href="{% url 'blog:post_review' %}">下書き一覧</a>
                     </li>
-                    <li class="nav-item0">
-                        <a class="nav-link" href="{% url 'accounts:user_update' user.pk %}">ユーザー情報更新</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'accounts:user_detail' user.pk %}">ユーザー情報閲覧</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'logout' %}">ログアウト</a>
